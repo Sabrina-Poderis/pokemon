@@ -38,7 +38,7 @@ const App = () => {
 
         <input className='input-number' type="number" min={1} max={900} value={pokeNumber} onChange={(e) => setPokeNumber(Number(e.target.value))}/>
 
-        <button className="btn" type='button' onClick={() => handlePokeNumber(pokeNumber + 1)}>Capture this pokemon</button>
+        <button className="btn" type='button' onClick={() => handlePokeNumber(pokeNumber)}>Capture this pokemon</button>
         <p>{pokeName}</p>
 
         <div className="imageContainer">
