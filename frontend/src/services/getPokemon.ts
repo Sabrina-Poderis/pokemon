@@ -5,7 +5,8 @@ const getPokemon = async (id_poke: number) => {
         const response = await apiPokeServer.get(`/pokemon/${id_poke}`)
         return response.data
     } catch (error) {
-        return error
+        console.log('Error getPokemon: ', error);
+        return false;
     }
 }
 

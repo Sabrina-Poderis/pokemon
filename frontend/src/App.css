@@ -28,6 +28,40 @@ code {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-number {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.btn {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  color: #e74c3c;
+
+  cursor: pointer;
+  border: 2px solid #e74c3c;
+  border-radius: 0.5rem;
+  background-color: transparent;
+
+  margin: 20px;
+  padding: 1rem 2.5rem;
+}
+
+.imageContainer {
+  max-height: 96px;
+  max-width: 96px;
+}
+
+.imageContainer img{
+  width: -webkit-fill-available;
 }
