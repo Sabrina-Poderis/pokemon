@@ -4,9 +4,10 @@ import './App.css';
 
 const App = () => {
   const [pokeNumber, setPokeNumber] = React.useState(0);
-  const [pokeName, setPokeName] =  React.useState('');
+  const [pokeName, setPokeName] =  React.useState('---');
 
   const handlePokeNumber = async (value: number) => {
+    value++
     setPokeNumber(value)
     const pokemon = await getPokemon(value)
 
@@ -16,10 +17,9 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <input type="number" min={1} max={900} value={pokeNumber} onChange={(e) => handlePokeNumber(Number(e.target.value))}/>
-        <p>
-          {pokeName}
-        </p>
+        <input type="number" min={1} max={900} value={pokeNumber}/>
+        <button type='button' onClick={(e) => handlePokeNumber(pokeNumber)}>Capture this pokemon</button>
+        <p>{pokeName}</p>
       </header>
     </div>
   );
