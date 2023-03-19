@@ -8,13 +8,14 @@ interface IRequestPokemon {
   id_poke: String;
 }
 
-const getPokemon = (req: Request, res: Response) => {
-  // const params: IRequestPokemon = req.params;
+const getPokemon = (req: Request<IRequestPokemon>, res: Response) => {
+  const id_poke = req.params.id_poke;
 
-  axios.get(`${HTTP_API_POKEMON}/pokemon/${req.params.id_poke}`).then((response) => {
+  axios.get(`${HTTP_API_POKEMON}/pokemon/${id_poke}`).then((response) => {
     res.send(response.data)
   }).catch((error) => {
-    console.log(error)
+    res.status(error.response.status || 500)
+    res.send(error)
   })
 }
 
