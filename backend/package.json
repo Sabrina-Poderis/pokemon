@@ -1,7 +1,7 @@
 {
-  "name": "pokemon-server",
-  "version": "1.0.0",
-  "description": "My pokemon server with TypeScript",
+  "name": "team-rocket-pokemon-server",
+  "version": "1.0.1",
+  "description": "This is team rocket's super secret pokemon backend server",
   "main": "main/server.ts",
   "scripts": {
     "start": "ts-node main/server.ts",
