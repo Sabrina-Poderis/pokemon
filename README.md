@@ -2,6 +2,8 @@
 
 ![logo_TypeScript] ![logo_Nodejs] ![logo_Expressjs] ![logo_React]
 
+![Result Frontend](./layout.png)
+
 ## <span style="color:#014584">Objetivo</span> ##
 
 - Exibir no frontend um input de texto que ao escrever um número de 1 a 900 e ao usuário pressionar um botão, renderizar na tela o nome do pokémon daquele número.
